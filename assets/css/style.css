@@ -1924,6 +1924,7 @@ kbd {
     top: 27px;
     right: 30px;
   }
+
   .ak-munu_toggle span,
   .ak-munu_toggle span:before,
   .ak-munu_toggle span:after {
@@ -1932,6 +1933,7 @@ kbd {
     background-color: #ffffff;
     display: block;
   }
+
   .ak-munu_toggle span {
     margin: 0 auto;
     position: relative;
@@ -1939,6 +1941,7 @@ kbd {
     transition-duration: 0s;
     transition-delay: 0.2s;
   }
+
   .ak-munu_toggle span:before {
     content: '';
     position: absolute;
@@ -1947,6 +1950,7 @@ kbd {
     transition-duration: 0.2s;
     transition-delay: 0.2s, 0s;
   }
+
   .ak-munu_toggle span:after {
     content: '';
     position: absolute;
@@ -1955,9 +1959,22 @@ kbd {
     transition-duration: 0.2s;
     transition-delay: 0.2s, 0s;
   }
+
   .ak-site_header.ak-style1 .ak-munu_toggle {
     top: 50%;
-    right: 18px;
+    right: 10px;
+    margin-top: -13px;
+  }
+
+  /* Ensure visibility and proper positioning on smaller screens */
+  @media (max-width: 575px) {
+    .ak-munu_toggle {
+      display: inline-block;
+    }
+  }
+  .ak-site_header.ak-style1 .ak-munu_toggle {
+    top: 50%;
+    right: 10px;
     margin-top: -13px;
   }
   .ak-toggle_active span {
