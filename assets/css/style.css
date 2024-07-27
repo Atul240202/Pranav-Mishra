@@ -1966,12 +1966,6 @@ kbd {
     margin-top: -13px;
   }
 
-  /* Ensure visibility and proper positioning on smaller screens */
-  @media (max-width: 575px) {
-    .ak-munu_toggle {
-      display: inline-block;
-    }
-  }
   .ak-site_header.ak-style1 .ak-munu_toggle {
     top: 50%;
     right: 10px;
@@ -2018,6 +2012,7 @@ kbd {
     display: none;
   }
 }
+
 @media screen and (max-width: 991px) {
   .ak-site_header .container {
     max-width: 100%;
@@ -2051,7 +2046,7 @@ kbd {
     height: 20px;
   }
   .ak-main-header-right {
-    display: none;
+    display: inline-block;
   }
 }
 .nav-bar-border {
